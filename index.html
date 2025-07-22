@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Estações - Vinhos e Cervejas Artesanais</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yfq1pis.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <!-- Overlay para fechar sidebar -->
+    <div id="overlay" class="overlay"></div>
+    
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>4 Estações</h2>
+            <button id="closeSidebar" class="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#" data-page="home">Página Inicial</a></li>
+            <li><a href="#" data-page="destaques">Destaques</a></li>
+            <li><a href="#" data-page="vinhos">Vinhos</a></li>
+            <li><a href="#" data-page="cervejas">Cervejas</a></li>
+            <li><a href="#" data-page="sobre">Sobre Nós</a></li>
+            <li><a href="#" data-page="contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <button id="menuToggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1>4 Estações</h1>
+        <div class="header-actions">
+            <button id="adminBtn" class="admin-btn">Admin</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Página Inicial -->
+        <section id="home" class="page active">
+            <div class="carousel-container">
+                <h2>Destaques</h2>
+                <div class="carousel" id="carousel-destaques">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Premium">
+                            <div class="slide-info">
+                                <h3>Vinho Tinto Premium</h3>
+                                <p>R$ 89,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/cervejas/cerveja_teste.jpg" alt="Cerveja IPA Artesanal">
+                            <div class="slide-info">
+                                <h3>Cerveja IPA Artesanal</h3>
+                                <p>R$ 12,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Branco Seco">
+                            <div class="slide-info">
+                                <h3>Vinho Branco Seco</h3>
+                                <p>R$ 75,90</p>
+                            </div>
+                        </div>
+                         <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Premium">
+                            <div class="slide-info">
+                                <h3>Vinho Tinto Premium</h3>
+                                <p>R$ 89,90</p>
+                            </div>
+                        </div>
+                         <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Premium">
+                            <div class="slide-info">
+                                <h3>Vinho Tinto Premium</h3>
+                                <p>R$ 89,90</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="carousel-container">
+                <h2>Promoções</h2>
+                <div class="carousel" id="carousel-promocoes">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Rosé">
+                            <div class="slide-info">
+                                <h3>Vinho Rosé</h3>
+                                <p class="promo-price">De R$ 65,90 por R$ 49,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/cervejas/cerveja_teste.jpg" alt="Cerveja Lager">
+                            <div class="slide-info">
+                                <h3>Cerveja Lager</h3>
+                                <p class="promo-price">De R$ 9,90 por R$ 7,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Espumante">
+                            <div class="slide-info">
+                                <h3>Espumante Premium</h3>
+                                <p class="promo-price">De R$ 120,90 por R$ 89,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Rosé">
+                            <div class="slide-info">
+                                <h3>Vinho Rosé</h3>
+                                <p class="promo-price">De R$ 65,90 por R$ 49,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Rosé">
+                            <div class="slide-info">
+                                <h3>Vinho Rosé</h3>
+                                <p class="promo-price">De R$ 65,90 por R$ 49,90</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="carousel-container">
+                <h2>Vinhos</h2>
+                <div class="carousel" id="carousel-vinhos">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Arte">
+                            <div class="slide-info">
+                                <h3>Vinho Tinto Arte</h3>
+                                <p>R$ 95,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Branco Colonial">
+                            <div class="slide-info">
+                                <h3>Vinho Branco Colonial</h3>
+                                <p>R$ 68,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Rosé Garcia">
+                            <div class="slide-info">
+                                <h3>Vinho Rosé Garcia</h3>
+                                <p>R$ 72,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Arte">
+                            <div class="slide-info">
+                                <h3>Vinho Tinto Arte</h3>
+                                <p>R$ 95,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Arte">
+                            <div class="slide-info">
+                                <h3>Vinho Tinto Arte</h3>
+                                <p>R$ 95,90</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="carousel-container">
+                <h2>Cervejas</h2>
+                <div class="carousel" id="carousel-cervejas">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="images/cervejas/cerveja_teste.jpg" alt="Cerveja Stout">
+                            <div class="slide-info">
+                                <h3>Cerveja Stout</h3>
+                                <p>R$ 14,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/cervejas/cerveja_teste.jpg" alt="Cerveja Weiss">
+                            <div class="slide-info">
+                                <h3>Cerveja Weiss</h3>
+                                <p>R$ 11,90</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/cervejas/cerveja_teste.jpg" alt="IPA Premium">
+                            <div class="slide-info">
+                                <h3>IPA Premium</h3>
+                                <p>R$ 16,90</p>
+                            </div>
+                        </div>
+                         <div class="carousel-slide">
+                            <img src="images/cervejas/cerveja_teste.jpg" alt="IPA Premium">
+                            <div class="slide-info">
+                                <h3>IPA Premium</h3>
+                                <p>R$ 16,90</p>
+                            </div>
+                        </div>
+                         <div class="carousel-slide">
+                            <img src="images/cervejas/cerveja_teste.jpg" alt="IPA Premium">
+                            <div class="slide-info">
+                                <h3>IPA Premium</h3>
+                                <p>R$ 16,90</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Destaques -->
+        <section id="destaques" class="page">
+            <h2>Produtos em Destaque</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/vinhos/vinho_tinto_1.jpg" alt="Vinho Tinto Premium">
+                    <h3>Vinho Tinto Premium</h3>
+                    <p class="price">R$ 89,90</p>
+                    <p class="stock">Estoque: 25 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Tinto Premium')">Comprar</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/images/cervejas/cerveja_ipa_1.jpg" alt="Cerveja IPA Artesanal">
+                    <h3>Cerveja IPA Artesanal</h3>
+                    <p class="price">R$ 12,90</p>
+                    <p class="stock">Estoque: 48 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Cerveja IPA Artesanal')">Comprar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/vinhos/vinho_branco_1.png" alt="Vinho Branco Seco">
+                    <h3>Vinho Branco Seco</h3>
+                    <p class="price">R$ 75,90</p>
+                    <p class="stock">Estoque: 18 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Branco Seco')">Comprar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/vinhos/vinho_espumante_1.jpg" alt="Espumante Premium">
+                    <h3>Espumante Premium</h3>
+                    <p class="price">R$ 120,90</p>
+                    <p class="stock">Estoque: 12 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Espumante Premium')">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Vinhos -->
+        <section id="vinhos" class="page">
+            <h2>Nossos Vinhos</h2>
+            <div class="products-grid" id="vinhos-grid">
+                <div class="product-card" data-product="vinho-1">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Premium">
+                    <h3>Vinho Tinto Premium</h3>
+                    <p class="price">R$ 89,90</p>
+                    <p class="stock">Estoque: 25 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Tinto Premium')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-2">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Branco Seco">
+                    <h3>Vinho Branco Seco</h3>
+                    <p class="price">R$ 75,90</p>
+                    <p class="stock">Estoque: 18 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Branco Seco')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-3">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Rosé Elegante">
+                    <h3>Vinho Rosé Elegante</h3>
+                    <p class="price">R$ 65,90</p>
+                    <p class="stock">Estoque: 32 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Rosé Elegante')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-4">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Espumante Premium">
+                    <h3>Espumante Premium</h3>
+                    <p class="price">R$ 120,90</p>
+                    <p class="stock">Estoque: 12 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Espumante Premium')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-5">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Arte">
+                    <h3>Vinho Tinto Arte</h3>
+                    <p class="price">R$ 95,90</p>
+                    <p class="stock">Estoque: 15 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Tinto Arte')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-6">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Branco Colonial">
+                    <h3>Vinho Branco Colonial</h3>
+                    <p class="price">R$ 68,90</p>
+                    <p class="stock">Estoque: 28 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Branco Colonial')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-7">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Rosé Garcia">
+                    <h3>Vinho Rosé Garcia</h3>
+                    <p class="price">R$ 72,90</p>
+                    <p class="stock">Estoque: 22 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Rosé Garcia')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-8">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Espumante Moscatel">
+                    <h3>Espumante Moscatel</h3>
+                    <p class="price">R$ 98,90</p>
+                    <p class="stock">Estoque: 20 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Espumante Moscatel')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-9">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Tinto Portuga">
+                    <h3>Vinho Tinto Portuga</h3>
+                    <p class="price">R$ 82,90</p>
+                    <p class="stock">Estoque: 35 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Tinto Portuga')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="vinho-10">
+                    <img src="images/vinhos/vinho_teste.jpg" alt="Vinho Branco Praia">
+                    <h3>Vinho Branco Praia</h3>
+                    <p class="price">R$ 78,90</p>
+                    <p class="stock">Estoque: 24 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Vinho Branco Praia')">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Cervejas -->
+        <section id="cervejas" class="page">
+            <h2>Nossas Cervejas Artesanais</h2>
+            <div class="products-grid" id="cervejas-grid">
+                <div class="product-card" data-product="cerveja-1">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="Cerveja IPA Schornstein">
+                    <h3>Cerveja IPA Schornstein</h3>
+                    <p class="price">R$ 12,90</p>
+                    <p class="stock">Estoque: 48 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Cerveja IPA Schornstein')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-2">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="Cerveja Lager Corujinha">
+                    <h3>Cerveja Lager Corujinha</h3>
+                    <p class="price">R$ 9,90</p>
+                    <p class="stock">Estoque: 62 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Cerveja Lager Corujinha')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-3">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="Cerveja Stout Ekäut">
+                    <h3>Cerveja Stout Ekäut</h3>
+                    <p class="price">R$ 14,90</p>
+                    <p class="stock">Estoque: 36 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Cerveja Stout Ekäut')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-4">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="Cerveja Weiss Füder">
+                    <h3>Cerveja Weiss Füder</h3>
+                    <p class="price">R$ 11,90</p>
+                    <p class="stock">Estoque: 54 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Cerveja Weiss Füder')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-5">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="IPA Premium Info">
+                    <h3>IPA Premium Info</h3>
+                    <p class="price">R$ 16,90</p>
+                    <p class="stock">Estoque: 28 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('IPA Premium Info')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-6">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="Lager Hop Campinas">
+                    <h3>Lager Hop Campinas</h3>
+                    <p class="price">R$ 13,90</p>
+                    <p class="stock">Estoque: 42 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Lager Hop Campinas')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-7">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="Stout Mel Engenho">
+                    <h3>Stout Mel Engenho</h3>
+                    <p class="price">R$ 15,90</p>
+                    <p class="stock">Estoque: 31 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Stout Mel Engenho')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-8">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="Weiss Schornstein">
+                    <h3>Weiss Schornstein</h3>
+                    <p class="price">R$ 12,90</p>
+                    <p class="stock">Estoque: 39 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Weiss Schornstein')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-9">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="IPA Baden Baden">
+                    <h3>IPA Baden Baden</h3>
+                    <p class="price">R$ 18,90</p>
+                    <p class="stock">Estoque: 26 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('IPA Baden Baden')">Comprar</button>
+                </div>
+                <div class="product-card" data-product="cerveja-10">
+                    <img src="images/cervejas/cerveja_teste.jpg" alt="Lager Artesanal Premium">
+                    <h3>Lager Artesanal Premium</h3>
+                    <p class="price">R$ 14,90</p>
+                    <p class="stock">Estoque: 33 unidades</p>
+                    <button class="buy-btn" onclick="comprarProduto('Lager Artesanal Premium')">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Sobre Nós -->
+        <section id="sobre" class="page">
+            <div class="about-content">
+                <h2>Sobre a 4 Estações</h2>
+                <div class="about-text">
+                    <p>A 4 Estações nasceu da paixão por vinhos e cervejas artesanais de qualidade. Somos uma empresa familiar que há mais de 10 anos se dedica a trazer para você os melhores rótulos nacionais e internacionais.</p>
+                    
+                    <p>Nossa missão é proporcionar experiências únicas através de produtos cuidadosamente selecionados, sempre priorizando a qualidade e a procedência de cada item em nosso catálogo.</p>
+                    
+                    <p>Trabalhamos diretamente com produtores artesanais, garantindo que cada garrafa conte uma história e carregue consigo toda a tradição e cuidado de quem a produziu.</p>
+                    
+                    <h3>Nossos Valores</h3>
+                    <ul>
+                        <li><strong>Qualidade:</strong> Selecionamos apenas produtos de excelência</li>
+                        <li><strong>Tradição:</strong> Respeitamos os métodos tradicionais de produção</li>
+                        <li><strong>Inovação:</strong> Sempre em busca de novos sabores e experiências</li>
+                        <li><strong>Atendimento:</strong> Cada cliente é único e especial para nós</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Contato -->
+        <section id="contato" class="page">
+            <div class="contact-content">
+                <h2>Entre em Contato</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Telefone/WhatsApp</h3>
+                        <p>(42) 98819-4349</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>contato@4estacoes.com.br</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Endereço</h3>
+                        <p>Rua das Vinhas, 123<br>Centro - Cidade/Estado<br>CEP: 12345-678</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 16h<br>Domingo: Fechado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Admin -->
+        <section id="admin" class="page admin-page">
+            <div class="admin-content">
+                <h2>Painel Administrativo</h2>
+                <div class="admin-tabs">
+                    <button class="tab-btn active" data-tab="produtos">Gerenciar Produtos</button>
+                    <button class="tab-btn" data-tab="estoque">Controle de Estoque</button>
+                </div>
+                
+                <div id="produtos-tab" class="tab-content active">
+                    <h3>Produtos Cadastrados</h3>
+                    <div class="admin-products-grid" id="admin-products-grid">
+                        <!-- Produtos serão carregados dinamicamente -->
+                    </div>
+                </div>
+                
+                <div id="estoque-tab" class="tab-content">
+                    <h3>Controle de Estoque</h3>
+                    <div class="stock-controls" id="stock-controls">
+                        <!-- Controles de estoque serão carregados dinamicamente -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login Administrativo</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Edição de Produto -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Produto</h2>
+            <form id="editForm">
+                <div class="form-group">
+                    <label for="editName">Nome:</label>
+                    <input type="text" id="editName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="editPrice">Preço:</label>
+                    <input type="number" id="editPrice" name="price" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="editStock">Estoque:</label>
+                    <input type="number" id="editStock" name="stock" required>
+                </div>
+                <div class="form-group">
+                    <label for="editImage">URL da Imagem:</label>
+                    <input type="text" id="editImage" name="image">
+                </div>
+                <div class="form-group">
+                    <label for="editDescription">Descrição:</label>
+                    <textarea id="editDescription" name="description" rows="3"></textarea>
+                </div>
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
