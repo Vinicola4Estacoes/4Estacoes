@@ -202,7 +202,7 @@ function handleLogin(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     
-    if (username === 'admin' && password === 'admin') {
+    if (username === 'admin' && password === 'admin@2025*') {
         isLoggedIn = true;
         document.getElementById('loginModal').style.display = 'none';
         showPage('admin');
